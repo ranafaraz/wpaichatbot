@@ -1,48 +1,50 @@
-# Wordpress - ignore core, configuration, examples, uploads and logs.
-# https://github.com/github/gitignore/blob/main/WordPress.gitignore
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
 
-# Core
-#
-# Note: if you want to stage/commit WP core files
-# you can delete this whole section/until Configuration.
-/wp-admin/
-/wp-content/index.php
-/wp-content/languages
-/wp-content/plugins/index.php
-/wp-content/themes/index.php
-/wp-includes/
-/index.php
-/license.txt
-/readme.html
-/wp-*.php
-/xmlrpc.php
-
-# Configuration
-wp-config.php
-
-# Example themes
-/wp-content/themes/twenty*/
-
-# Example plugin
-/wp-content/plugins/hello.php
-
-# Uploads
-/wp-content/uploads/
-
-# Log files
+# Ignore log files and databases
 *.log
+*.sql
+*.sqlite
+*.env
 
-# htaccess
-/.htaccess
+# Ignore Composer vendor directory
+/vendor/
 
-# All plugins
-#
-# Note: If you wish to whitelist plugins,
-# uncomment the next line
-#/wp-content/plugins
+# Ignore node_modules and build files
+node_modules/
+npm-debug.log
+yarn-error.log
 
-# All themes
-#
-# Note: If you wish to whitelist themes,
-# uncomment the next line
-#/wp-content/themes
+# Ignore SASS, LESS cache
+.sass-cache/
+*.css.map
+*.less.map
+
+# Ignore PHPStorm project files
+.idea/
+
+# Ignore WordPress-specific generated files
+wp-config.php
+.htaccess
+
+# Ignore backup files
+*.bak
+*.swp
+*.tmp
+*~
+
+# Ignore compiled code, if applicable
+*.min.js
+*.min.css
+
+# Ignore compiled assets, if applicable
+/dist/
+.build/
+
+# Ignore Composer's lock file if not committing it
+composer.lock
+
+# Ignore any personal settings or temporary files
+*.local
+*.example
