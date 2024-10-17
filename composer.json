@@ -1,0 +1,24 @@
+{
+    "name": "ranafaraz/chatgpt-widget",
+    "description": "A ChatBot widget for WordPress that uses ChatGPT APIs to respond to user queries.",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "Ranafaraz\\ChatgptWidget\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rana Faraz",
+            "email": "ranafarazahmed@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "php-mock/php-mock": "^2.5",
+        "yoast/phpunit-polyfills": "^2.0"
+    }
+}

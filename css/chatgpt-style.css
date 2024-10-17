@@ -1,0 +1,124 @@
+/* General styles for the chat widget */
+#chatgpt-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 350px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+/* Full screen button styles */
+#chatgpt-fullscreen {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #0073aa;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 12px;
+    transition: background-color 0.3s;
+    z-index: 1001;
+}
+
+#chatgpt-fullscreen:hover {
+    background-color: #005f8a;
+}
+
+/* Header styles */
+#chatgpt-header {
+    background-color: #0073aa;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+#chatgpt-header:hover {
+    background-color: #005f8a;
+}
+
+/* Body styles */
+#chatgpt-body {
+    display: none;
+    padding: 15px;
+}
+
+/* Message container styles */
+#chatgpt-messages {
+    height: 250px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Individual message styles */
+.chatgpt-message {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    word-wrap: break-word;
+}
+
+.chatgpt-message-user {
+    background-color: #0073aa;
+    color: #fff;
+    text-align: right;
+}
+
+.chatgpt-message-bot {
+    background-color: #e9ecef;
+    color: #333;
+}
+
+.chatgpt-message-error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Input styles */
+#chatgpt-input {
+    width: calc(100% - 70px);
+    height: 50px;  /* Adjust height as needed */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+    resize: none;  /* Prevent manual resizing */
+}
+
+#chatgpt-input:focus {
+    border-color: #0073aa;
+}
+
+/* Send button styles */
+#chatgpt-send {
+    padding: 10px 20px;
+    background-color: #0073aa;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#chatgpt-send:hover {
+    background-color: #005f8a;
+}
