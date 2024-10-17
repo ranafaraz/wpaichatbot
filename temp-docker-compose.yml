@@ -1,3 +1,7 @@
+# This is a sample .yml docker file to setup new wp installation.
+# Make sure to create its copy out of this folder and rename it to docker-compose.yml
+# Afterwards run this command: docker-compose up --build -d
+
 services:
   mariadb:
     image: bitnami/mariadb:latest
