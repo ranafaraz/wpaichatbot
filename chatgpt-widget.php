@@ -121,3 +121,5 @@ function chatgpt_widget_deactivate() {
 }
 register_deactivation_hook(__FILE__, 'chatgpt_widget_deactivate');
 ?>
+
+<!-- This is a test case. -->
